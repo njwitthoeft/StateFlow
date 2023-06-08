@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "stateflow"
+version = "0.1.0"
+description = "Ergonomiz wrapper around state machines"
+authors = ["Nicholas Witthoeft <njwitthoeft@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = ">=0.9.0"
+rich = ">=13.4.1"
+aws-lambda-typing = "^2.17.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = ">=3.3.2"
+pytest = "^7.3.1"
+
+[tool.poetry.scripts]
+stateflow = "stateflow.cli:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
